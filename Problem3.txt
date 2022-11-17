@@ -1,0 +1,19 @@
+Name & Collaborator Name: Jazmyn Walker
+First letter of first name for part c: j
+
+main.cpp output:
+The number of "words" that contain only letters: 26739138
+Shortest pangram: 54
+Number of valid dictionary words that don't contain first letter of first name: Works on TinyData seg fault with BigData
+
+
+Explanation:
+a) To solve this I used the ">>" operator since it reads until it encounters a blank which by homework definition defines a word. Then within the while loop I store each word as a string and use a for loop to each if each character is a letter using is alpha.
+I keep track of how many of the characters are letters using the lettercount variable, then if it equals the string length I increment the counter. Otherwise I don't increment
+
+b) I created an array with size 26. I then used .get() to read the file character by character. I increment the counter every character, but only return the count once every element in the array is 1. Under the assumption that the shortest panagram would only encounter every letter once, if 
+I encounter a letter a second time I first check if the array was already full, and it not I reset the counter to one and continue going character by character until the the array is full meaning each letter was encountered once.
+I also converted the characters to lowercase letters to try to optimize the code by using the ascii range of the lowercase letters (97-122)
+
+c) I began by declaring a large array to store, each word which I found using the same code as problem a. I then opened the dictionary file and checked each of the words in the array against each word in the dictionary file. In the if statement used to determine whether the counter was incremented or not
+I added two statements which would make the statement invalid in the presence of and upper or lowercase J using the find function.
