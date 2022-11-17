@@ -11,7 +11,7 @@ using namespace std;
 
 int threeA(){
     ifstream txtfile;
-    txtfile.open("TinyData.txt");
+    txtfile.open("BigData.txt");
     string word;
     int count = 0;
     int lettercount = 0;
@@ -45,7 +45,7 @@ int threeA(){
 int threeB(){
     int alphacheck[26] = {0};
     ifstream txtfile;
-    txtfile.open("TinyData.txt");
+    txtfile.open("BigData.txt");
     string word;
     int count = 0;
     int letterint;
@@ -87,7 +87,7 @@ int threeC(){
  
 string words[200];
 ifstream txtfile;
-    txtfile.open("TinyData.txt");
+    txtfile.open("BigData.txt");
     string word;
     int count = 0;
     int lettercount = 0;
