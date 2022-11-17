@@ -62,7 +62,7 @@ int threeB(){
             if (isalpha(letter)){
                 if(letterint>=97 && letterint<=122){
                     alphacheck[letterint-97]=1;
-                    cout<< letter<<endl;
+                   
                 }
                 for(int i=0;i<26;i++){
                     if(alphacheck[i]>=1){
